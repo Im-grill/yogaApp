@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DetailYoga">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/detailYogaToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/Base.Theme.Yoga"
+            app:titleTextColor="@color/white">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <Button
+            android:id="@+id/btnManager"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/lavender_border"
+            android:text="Manager"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+        <!-- Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailyogaName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Day of the week -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Day of the week"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailyogaDayOfTheWeek"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailyogaDate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray"
+                android:drawablePadding="8dp"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Duration -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Duration"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailyogaCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Price"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailyogaPriceValue"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:padding="@dimen/_2sdp"
+                android:text="0 USD"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <!-- Type of Class -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Type of Class "
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailyogaTypeOfClassy"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Description -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Description"
+
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailyogaDescription"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Image -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Image"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/detailyogaImage"
+                android:layout_width="118dp"
+                android:layout_height="93dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/camera"
+                android:padding="@dimen/_8sdp" />
+        </LinearLayout>
+
+        <!-- Teacher -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Teacher"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailyogaTeacher"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:completionThreshold="1"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Added time"
+
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailAddedTime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Update time"
+
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailUpdateTime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

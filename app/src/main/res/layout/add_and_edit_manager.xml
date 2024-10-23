@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddAndEditManager">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/addAndEditToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@color/white"
+            android:theme="@style/Base.Theme.Yoga"
+            android:elevation="4dp"
+            app:popupTheme="@style/Base.Theme.Yoga" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Yoga Name"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/yogaManagerName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Manager Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Manager Name"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/managerName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:hint="Enter Manager name"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Manager Comment -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Manager Comment"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/managerComment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:hint="Enter Manager comment"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Manager Image -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/lavender_border"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Manager Image"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/managerImage"
+                android:layout_width="76dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="@dimen/_90sdp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/upload" />
+        </LinearLayout>
+
+        <!-- Add Manager Button -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addManager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="TODO"
+            android:elevation="5dp"
+            android:src="@drawable/ic_baseline_add_24"
+            app:backgroundTint="@color/lavender"
+            app:pressedTranslationZ="10dp"
+            app:tint="@color/white" />
+    </LinearLayout>
+</ScrollView>
+

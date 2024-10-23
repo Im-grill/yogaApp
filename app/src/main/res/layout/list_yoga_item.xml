@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/yogaImage"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="0dp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_baseline_person_24"
+            app:civ_border_color="@color/colorTextPrimary"
+            app:civ_border_width="@dimen/_1sdp" />
+
+        <TextView
+            android:id="@+id/yogaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yogaImage"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="-45dp"
+            android:layout_toRightOf="@+id/yogaImage"
+            android:text="Yoga Name"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/yogaDayOfTheWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yogaName"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/yogaImage"
+            android:text="Yoga Location"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/yogaPrice"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="192dp"
+            android:layout_marginTop="22dp"
+            android:text="15 USD"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/yogaEdit"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/yogaPrice"
+            android:src="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/yogaDelete"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/yogaEdit"
+            android:src="@drawable/delete" />
+    </RelativeLayout>
+</RelativeLayout>

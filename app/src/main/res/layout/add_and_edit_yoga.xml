@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddAndEditYoga">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/addToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/Base.Theme.Yoga"
+            app:popupTheme="@style/Base.Theme.Yoga"
+            app:titleTextColor="@color/white" />
+
+        <!-- Email -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/yogaEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/yogaName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:hint="Enter name of hike"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Day of the week -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Day of the week"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/yogaDayOfTheWeek"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:hint="Enter the day of the week"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/yogaDate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray"
+                android:drawablePadding="8dp"
+                android:text="Select Date"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <!-- Capacity  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Capacity "
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/yogaCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yogaYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="6 people"
+                    android:textSize="12dp" />
+
+                <RadioButton
+                    android:id="@+id/yogaNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 people"
+                    android:textSize="12dp" />
+            </RadioGroup>
+        </LinearLayout>
+        <!-- Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Price"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/yogaPriceValue"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:padding="@dimen/_2sdp"
+                android:text="0 USD"
+                android:textSize="14dp" />
+
+            <SeekBar
+                android:id="@+id/yogaPriceSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:max="100"
+                android:padding="8dp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Type of Class -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Type of Class"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/yogaTypeOfClassy"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:hint="Enter type of Classl"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Description -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="12.5dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/yogaDescription"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:hint="Enter description"
+                android:padding="@dimen/_8sdp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Image -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Teacher"
+                    android:textColor="@color/black"
+                    android:textSize="12.5dp"
+                    android:textStyle="bold" />
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/yogaTeacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lavender_border"
+                    android:completionThreshold="1"
+                    android:hint="Choose teachers"
+                    android:padding="@dimen/_8sdp"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Image"
+                    android:textColor="@color/black"
+                    android:textSize="12.5dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/yogaImage"
+                android:layout_width="118dp"
+                android:layout_height="93dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/camera"
+                android:padding="@dimen/_8sdp" />
+        </LinearLayout>
+
+        <!-- Teacher -->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_yoga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="TODO"
+            android:elevation="5dp"
+            android:src="@drawable/ic_baseline_add_24"
+            app:backgroundTint="@color/lavender"
+            app:pressedTranslationZ="10dp"
+            app:tint="@color/white" />
+    </LinearLayout>
+</ScrollView>
+
